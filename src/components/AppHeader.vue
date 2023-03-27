@@ -5,6 +5,7 @@ export default{
 </script>
 <template>
     <header>
+         <img src="#" alt="logo">
          <h1>Yu-GHI-YO API</h1>
     </header>
 </template>
@@ -12,4 +13,10 @@ export default{
 
 
 <style lang="scss" scoped>
+
+header{
+    display: flex;
+    align-items: center;
+}
+
 </style>
