@@ -1,13 +1,23 @@
 <script>
 export default{
-    name: 'CharacterCard'
+    name: 'CharacterCard',
+    props:{
+      img: String,
+      name: String,
+      type: {
+        default: 'Generic',
+        type: String
+      }
+    }
 }
 </script>
 
 <template>
     <div>
-      bello
+      <!-- <img :src="img" :alt="name"> -->
     </div>
+    <div>{{ name }}</div>
+    <div>{{ type }}</div>
 </template>
 
 
