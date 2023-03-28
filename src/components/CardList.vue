@@ -19,8 +19,8 @@ export default{
 </script>
 <template>
     <div class="list-cont">
-       <div class="col" v-for="character in store.cards">
-        <CharacterCard :img="character.character_images[0].image_url" :name="character.name"></CharacterCard>
+       <div class="col" v-for="character in store.cards" v-bind="cards">
+        <CharacterCard :img="character.image"></CharacterCard>
        </div>
     </div>
 </template>

@@ -23,7 +23,8 @@ export default{
       callCard(){
           axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
            .then((response) => {
-            this.store.cards = response.data.slice(0,20);
+            this.store.cards = response.data.data.slice(0,20);
+            console.log(response.data)
             this.store.lengthSearch = this.store.cards.length
             console.log(response)
            });
